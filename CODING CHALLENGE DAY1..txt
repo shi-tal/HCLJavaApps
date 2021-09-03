@@ -1,0 +1,77 @@
+//program to print my first program in java:
+package codingchallengesday1;
+
+public class myfirstprogram {
+
+	public static void main(String[] args) {
+	
+		System.out.println("My first program in java");
+
+	}
+
+}
+
+
+//program to check whether the no is even or odd:
+package codingchallengesday1;
+import java.util.Scanner;
+public class Numberisevenodd {
+
+	public static void main(String[] args) {
+		
+		int n;
+		System.out.println("enter the number");
+		Scanner scr=new Scanner(System.in);
+		n=scr.nextInt();
+        if(n%2==0)
+        	System.out.println("No is Even ");
+        else
+        	System.out.println("No is odd ");
+        scr.close();
+	
+}
+}
+
+
+//program to check whether the no is even or odd using ternary operator:
+package codingchallengesday1;
+import java.util.Scanner;
+
+public class Ternary {
+
+	public static void main(String[] args) {
+		
+          int n;
+          System.out.println("enter the number");
+      	Scanner scr=new Scanner(System.in);
+      	n=scr.nextInt();
+          String result = (n % 2 == 0) ? "even" : "odd";
+	      System.out.println(result);
+	      scr.close();
+
+}
+}
+
+
+//program to check whether the year is Leap year or not:
+package codingchallengesday1;
+import java.util.Scanner;
+public class leapyr {
+public static void main(String[]args) {
+	int year;
+	System.out.println("enter the year");
+	Scanner scr=new Scanner(System.in);
+	year=scr.nextInt();
+	if(((year%4==0)&&(year%100!=0))||(year%400==0) ){
+		System.out.println("leap year");
+	}
+	
+	else {
+		System.out.println("not a leap year");
+	}
+	scr.close();
+}
+}
+
+
+
